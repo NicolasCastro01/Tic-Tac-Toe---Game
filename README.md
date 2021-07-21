@@ -1,0 +1,2 @@
+Description: 
+  I created this clone of the Tic Tac Toe game both for the fun of people and for my own development as a professional in the JavaScript Full Stack development area. Of course, I didn't use all my knowledge related to Full Stack, but it's already an experience for future projects.

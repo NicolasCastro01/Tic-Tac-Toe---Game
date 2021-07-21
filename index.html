@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" id="Html">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" type="imagem/gif" href="img/tenor.gif" />
+        <link rel="stylesheet" href="style.css">
+        <title>Tic tac toe - Game</title>
+    </head>
+
+    <body id="Body">
+
+        <div id="game" class="container" style="display: none;"><!--Game-->
+            <div class="container">
+                <center>
+                    <h1 id="tituloP" class="title is-1">T<span id="i">i</span>c T<span id="a">a</span>c T<span id="o">o</span>e</h1>
+                </center>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div id="bordaScore">
+                            <center>
+                                <h1 class="subtitle is-3" id="win"></h1>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="container" id="gamePrin">
+                            <center>
+                                <nobr>
+                                    <div class="columns" id="col">
+                                        <div class="column" id="col1">
+                                            <center>
+                                                <div id="boxF" class="box" onClick="mark(1)" canmark="true">
+                                                    <center ><p><strong id="box1"></strong></p></center>
+                                                </div>
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxQ" class="box" onClick="mark(4)" canmark="true">
+                                                    <center ><p><strong id="box4"></strong></p></center>
+                                                </div>
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxSE" class="box" onClick="mark(7)" canmark="true">
+                                                    <center ><p><strong id="box7"></strong></p></center>
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="column">
+                                            <center>
+            
+                                                <div id="boxS" class="box" onClick="mark(2)" canmark="true">
+                                                    <center ><p><strong id="box2"></strong></p></center>
+                                                </div>
+            
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxFI" class="box" onClick="mark(5)" canmark="true">
+                                                    <center ><p><strong id="box5"></strong></p></center>
+                                                </div>
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxE" class="box" onClick="mark(8)" canmark="true">
+                                                    <center ><p><strong id="box8"></strong></p></center>
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="column">
+                                            <center>
+                                                <div id="boxT" class="box" onClick="mark(3)" canmark="true">
+                                                    <center ><p><strong id="box3"></strong></p></center>
+                                                </div>
+            
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxSIX" class="box" onClick="mark(6)" canmark="true">
+                                                    <center ><p><strong id="box6"></strong></p></center>
+                                                </div>
+                                            </center>
+                                            <br>
+                                            <center>
+                                                <div id="boxNINE" class="box" onClick="mark(9)" canmark="true">
+                                                    <center ><p><strong id="box9"></strong></p></center>
+                                                </div>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </nobr>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column"><!--Espaço vazio-->
+                        <center>
+                            <h1 class="title is-3">
+                                <a href="index.html">
+                                    <div id="menuCSS">
+                                        <center>
+                                            Menu
+                                        </center>
+                                    </div>
+                                </a>
+                            </h1>
+                        </center>
+                        <br>
+                        <br>
+                        <center>
+                            <h1 class="title is-3">
+                                <a onclick="newGame()">
+                                    <div id="newGameCSS">
+                                        <center id="newGame">
+
+                                        </center>
+                                    </div>
+                                </a>
+                            </h1>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <center id="foot">
+                    Creator - Nicolas Castro 👾
+                </center>
+            </footer>
+        </div>
+        <div class="container" id="menu" style="display: none;">
+            <div class="columns">
+                <div class="column">
+
+                </div>
+
+                <div class="column"><!--Menu-->
+                    <div class="container">
+                        <center>
+                            <h1 id="tituloPr" class="title is-1">T<span id="i">i</span>c T<span id="a">a</span>c T<span id="o">o</span>e</h1>
+                        </center>
+                    </div>
+                    <center>
+                        <div id="borderM">
+                            <a onclick="start()">
+                                <center>
+                                    <div id="StartB">
+                                        <span class="subtitle is-2" id="Start">
+                                            PLAY
+                                        </span>
+                                    </div>
+                                </center>
+                            </a>
+                            <a href="about/about.html">
+                                <center>
+                                    <div id="AboutB">
+                                        <span class="subtitle is-2" id="About">
+                                            About
+                                        </span>
+                                    </div>
+                                </center>
+                            </a>
+                        </div>
+
+                    </center>
+                </div>
+
+                <div class="column">
+
+                </div>
+            </div>
+            <footer>
+                <center id="foot1">
+                    Creator - Nicolas Castro 👾
+                </center>
+            </footer>
+        </div>
+        <div id="loading"> <!--Loading screen-->
+            <center>
+                <img src="load/giphy.gif" id="img_load">
+                <p><strong>Loading...</strong></p>
+            </center>
+        </div>
+        
+        
+        <script src="load/load.js"></script>
+        <script src="game.js"></script>
+
+    </body>
+
+</html>
